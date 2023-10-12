@@ -11,10 +11,10 @@ function startTimer() {
         return;
     }
 
-    // Change the title immediately
+   
     titleElement.textContent = "Age Timer";
 
-    // Hide elements
+    
     titleElement.style.display = "none";
     ageLabelElement.style.display = "none";
     birthdateInput.style.display = "none";
@@ -26,16 +26,16 @@ function startTimer() {
         const now = new Date();
         const ageMilliseconds = now - birthdate;
 
-        // Calculate age in years
+      
         ageYears = ageMilliseconds / (1000 * 60 * 60 * 24 * 365.25);
 
-        // Apply the gradient effect to the entire age
+       
         timerElement.innerHTML = `<span class="gradient-text">${ageYears.toFixed(12)}</span>`;
     }
 
-    // Show the timer element before starting the timer
+    
     timerElement.style.display = "block";
 
     updateTimer();
-    setInterval(updateTimer, 45); // Update the timer every 45 milliseconds
+    setInterval(updateTimer, 45); 
 }
