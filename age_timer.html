@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>when will it end</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ccc; /* Set the background color to grey */
+        }
+
+        h1 {
+            color: #71797E;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 20px 0;
+        }
+
+        input {
+            padding: 5px;
+        }
+
+        button {
+            background-color: #006400;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #004000;
+        }
+
+        .center {
+            text-align: center;
+            margin-top: 700px;
+        }
+
+        .gradient-text {
+            font-size: 30px;
+            letter-spacing: 2px;
+            background: linear-gradient(to right, green, red);
+            -webkit-background-clip: text;
+            color: transparent;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">pain.</h1>
+    <label for "birthdate" id="ageLabel">Enter your birthdate:</label>
+    <input type="date" id="birthdate">
+    <button onclick="startTimer()">Start Timer</button>
+    <div class="center">
+        <p id="timer" class="gradient-text"></p>
+    </div>
+
+    <script src="age_timer.js"></script>
+</body>
+</html>
